@@ -112,7 +112,11 @@ void sampleWhileAndDoLoop() { //WHILE LOOP IS WHEN YOU DO NOT CLEARLY KNOW THE L
 
     while (a < maxCount) { //THE LOOP WOULD NEVER STOP UNTIL IT BECOMES FALSE
         if (a == 3) { break; } //IF a ACHIEVED A VALUE OF 3, break THE LOOP
-        if (a == 1) { continue; }//IF a ACHIEVED A VALUE OF 1, SKIP THE 1
+        if (a == 1) { 
+            a = a + 1;
+            continue;
+            }//IF a ACHIEVED A VALUE OF 1, SKIP THE 1
+            
         std::cout << "value of a is " << a << std::endl;
         a = a + 1; //THIS IS EQUAL TO a++
     }
